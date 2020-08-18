@@ -8,22 +8,66 @@
     </head>
     
     <style>
-
+        /* tool tip container */
         .tooltip {
             position: relative;
-            
+            display: inline-block;
+            border-bottom: 1px dotted blue;
         }
-        
+
+        /* tool tip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+
+            /* positioning tool tip text */
+            position: absoute;
+            z-index: 1;
+        }
+
+        /* show tool tip when text when you mouse over tool tip container */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        /* add wrapping (maybe use pre tag?) */
         </style>
     
-    <body>
-       
+    <body> 
+
+        <div class="tooltiptext">world domination</div>
             
-        <div class="tooltip":position:relative>Hover over me
-        
-    
-        </div>       
+        <h1 class="tooltip">First heading</h1>
+
+        <p></p>
+
+        <h2>HHEADING SOME TEXT</h2>
+        <p></p>
+        <h3>Third heading</h3>
+        <p></p>
+        </div>
+
+        <pre>
+
+**********************************
+*__        __   _     _   _       *
+*\ \      / /__| |__ | | | |_ __  *
+* \ \ /\ / / _ \ '_ \| | | | '_ \ *
+*  \ V  V /  __/ |_) | |_| | |_) |*
+*   \_/\_/ \___|_.__/ \___/| .__/ *
+*                          |_|    *
+***********************************/
+
+        </pre>
+            
     </body>
 
 </html>
+
+
 
