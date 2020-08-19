@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="Cyber Knight Team" content="Itamar Givon" />
-        <meta name="description" content="Basic Website" />
-        <title> here is my website </title>
-    </head>
-    
-    <style>
-        /* tool tip container */
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            border-bottom: 1px dotted blue;
-        }
 
-        /* tool tip text */
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            padding: 5px 0;
-            border-radius: 6px;
+<head>
+    <meta charset="utf-8" />
+    <meta name="Cyber Knight Team" content="Itamar Givon" />
+    <meta name="description" content="Basic Website" />
+    <title> here is my website </title>
+</head>
 
-            /* positioning tool tip text */
-            position: absoute;
-            z-index: 1;
-        }
+<style>
+    /* tool tip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted blue;
+    }
 
-        /* show tool tip when text when you mouse over tool tip container */
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-        }
+    /* tool tip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
 
-        /* add wrapping (maybe use pre tag?) */
-        </style>
-    
-    <body> 
+        /* positioning tool tip text */
+        position: absoute;
+        z-index: 1;
+    }
 
-        <div class="tooltiptext">world domination</div>
-            
-        <h1 class="tooltip">First heading</h1>
+    /* show tool tip when text when you mouse over tool tip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
 
-        <p></p>
+    /* add wrapping (maybe use pre tag?) */
+</style>
 
-        <h2>HHEADING SOME TEXT</h2>
-        <p></p>
+<body>
+    <div class="tooltip">
+        <h1>First heading</h1>
+        <span class="tooltiptext">some tooltip</span>
+        <p>That's an h1</p>
+
+        <h2>Second heading</h2>
+        <span class="tooltiptext">some tooltip 2</span>
+        <p>That's an h2</p>
+
         <h3>Third heading</h3>
-        <p></p>
-        </div>
+        <span class="tooltiptext">some tooltip 3</span>
+        <p>That's an h3</p>
+    </div>
 
-        <pre>
+    <pre>
 
 **********************************
 *__        __   _     _   _       *
@@ -64,10 +66,7 @@
 ***********************************/
 
         </pre>
-            
-    </body>
+
+</body>
 
 </html>
-
-
-
